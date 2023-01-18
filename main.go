@@ -22,26 +22,35 @@ var books = []book{
 func main() {
 	app := fiber.New()
 
+	//display hello world
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.SendString("Hello, World!!")
 	})
 
+	//get all books
 	app.Get("/books", func(c *fiber.Ctx) error {
 		return c.JSON(books)
 	})
 
+	//get book
 	app.Get("/books/:id", func(c *fiber.Ctx) error {
 		bookId := c.Params("id")
 
-		for _, book := range books {
-			if book.ID == bookId {
-				return c.JSON(book)
-			}
+		// for _, book := range books {
+		// 	if book.ID == bookId {
+		// 		return c.JSON(book)
+		// 	}
+		// }
+		book, err := getBookById(bookId)
+
+		if err != nil {
+			return err
 		}
 
-		return c.SendString("No book found")
+		return c.Status(fiber.StatusOK).JSON(book)
 	})
 
+	//create book
 	app.Post("/books", func(c *fiber.Ctx) error {
 		newBook := new(book)
 
@@ -56,5 +65,45 @@ func main() {
 
 	})
 
+	//checkout book
+	app.Patch("/checkout", func(c *fiber.Ctx) error {
+		//get query value from the url
+		id := c.Query("id")
+
+		//get book
+		book, err := getBookById(id)
+
+		//check error
+		if err != nil {
+			return err
+		}
+
+		//check quantity of book
+		//if less than zero cannot checkout
+		if book.Quantity <= 0 {
+			return c.Status(fiber.StatusBadRequest).SendString("Cannot checkout book")
+		}
+
+		//decrease quantity by 1
+		book.Quantity -= 1
+
+		//send status and book
+		return c.Status(fiber.StatusOK).JSON(book)
+	})
+
 	app.Listen(":8000")
+}
+
+// get book by id
+func getBookById(id string) (*book, error) {
+
+	for i, book := range books {
+		if book.ID == id {
+			//pointer to the memory address and return error as nil
+			return &books[i], nil
+		}
+	}
+
+	//return nil books and error
+	return nil, fiber.NewError(400, "Book Not Found")
 }
