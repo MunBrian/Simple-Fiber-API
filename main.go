@@ -42,5 +42,19 @@ func main() {
 		return c.SendString("No book found")
 	})
 
+	app.Post("/books", func(c *fiber.Ctx) error {
+		newBook := new(book)
+
+		if err := c.BodyParser(&newBook); err != nil {
+			return err
+		}
+
+		//add book to books
+		books = append(books, *newBook)
+
+		return c.Status(fiber.StatusOK).JSON(books)
+
+	})
+
 	app.Listen(":8000")
 }
