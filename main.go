@@ -91,6 +91,26 @@ func main() {
 		return c.Status(fiber.StatusOK).JSON(book)
 	})
 
+	//return book func
+	app.Patch("/return", func(c *fiber.Ctx) error {
+		//get id from query
+		id := c.Query("id")
+
+		//get book
+		book, err := getBookById(id)
+
+		//check err
+		if err != nil {
+			return err
+		}
+
+		//increase book quantity by 1
+		book.Quantity += 1
+
+		//send status and book
+		return c.Status(fiber.StatusOK).JSON(book)
+	})
+
 	app.Listen(":8000")
 }
 
