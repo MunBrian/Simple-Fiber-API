@@ -1,0 +1,201 @@
+repo_name: MunBrian/Simple-Fiber-API
+report_id: 215db4e4357e5c5268b5f97aca92abf3
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-08T10:27:41+00:00'
+requested_by: MunBrian
+provider: github
+branch: master
+detected_tools_count: 14
+tools:
+- name: Golang
+  description: An open source programming language that makes it easy to build simple,
+    reliable, and efficient software
+  website_url: http://golang.org/
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1005/O6AczwfV_400x400.png
+  detection_source_url: https://github.com/MunBrian/Simple-Fiber-API
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/MunBrian/Simple-Fiber-API
+  detection_source: Repo Metadata
+- name: bytebufferpool
+  description: Anti-memory-waste byte buffer pool
+  package_url: https://pkg.go.dev/github.com/valyala/bytebufferpool
+  version: 1.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/MunBrian/Simple-Fiber-API/blob/master/go.sum
+  detection_source: go.mod
+  last_updated_by: Brian Mungai
+  last_updated_on: 2023-01-17 20:00:15.000000000 Z
+- name: color
+  description: Color package for Go
+  package_url: https://pkg.go.dev/github.com/fatih/color
+  version: 1.13.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/MunBrian/Simple-Fiber-API/blob/master/go.sum
+  detection_source: go.mod
+  last_updated_by: Brian Mungai
+  last_updated_on: 2023-01-18 10:42:18.000000000 Z
+- name: compress
+  description: Optimized compression packages
+  package_url: https://pkg.go.dev/github.com/klauspost/compress
+  version: 1.15.9
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/MunBrian/Simple-Fiber-API/blob/master/go.sum
+  detection_source: go.mod
+  last_updated_by: Brian Mungai
+  last_updated_on: 2023-01-17 20:00:15.000000000 Z
+- name: fasthttp
+  description: Fast HTTP package for Go
+  package_url: https://pkg.go.dev/github.com/valyala/fasthttp
+  version: 1.43.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/MunBrian/Simple-Fiber-API/blob/master/go.sum
+  detection_source: go.mod
+  last_updated_by: Brian Mungai
+  last_updated_on: 2023-01-17 20:00:15.000000000 Z
+- name: fsnotify
+  description: Cross-platform file system notifications for Go
+  package_url: https://pkg.go.dev/github.com/fsnotify/fsnotify
+  version: 1.6.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/MunBrian/Simple-Fiber-API/blob/master/go.sum
+  detection_source: go.mod
+  last_updated_by: Brian Mungai
+  last_updated_on: 2023-01-18 10:42:18.000000000 Z
+- name: go-colorable
+  description: Go-colorable Colorable writer for windows
+  package_url: https://pkg.go.dev/github.com/mattn/go-colorable
+  version: 0.1.9
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/MunBrian/Simple-Fiber-API/blob/master/go.sum
+  detection_source: go.mod
+  last_updated_by: Brian Mungai
+  last_updated_on: 2023-01-18 10:42:18.000000000 Z
+- name: go-isatty
+  description: Package isatty implements interface to isatty
+  package_url: https://pkg.go.dev/github.com/mattn/go-isatty
+  version: 0.0.12
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/MunBrian/Simple-Fiber-API/blob/master/go.sum
+  detection_source: go.mod
+  last_updated_by: Brian Mungai
+  last_updated_on: 2023-01-17 20:00:15.000000000 Z
+- name: go-runewidth
+  description: Go-runewidth Provides functions to get fixed width of the character
+    or string
+  package_url: https://pkg.go.dev/github.com/mattn/go-runewidth
+  version: 0.0.14
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/MunBrian/Simple-Fiber-API/blob/master/go.sum
+  detection_source: go.mod
+  last_updated_by: Brian Mungai
+  last_updated_on: 2023-01-17 20:00:15.000000000 Z
+- name: go-toml
+  description: Go library for the TOML language
+  package_url: https://pkg.go.dev/github.com/pelletier/go-toml
+  version: 1.9.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/MunBrian/Simple-Fiber-API/blob/master/go.sum
+  detection_source: go.mod
+  last_updated_by: Brian Mungai
+  last_updated_on: 2023-01-18 10:42:18.000000000 Z
+- name: mergo
+  description: 'Mergo: merging Go structs and maps since 2013'
+  package_url: https://pkg.go.dev/github.com/imdario/mergo
+  version: 0.3.13
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/MunBrian/Simple-Fiber-API/blob/master/go.sum
+  detection_source: go.mod
+  last_updated_by: Brian Mungai
+  last_updated_on: 2023-01-18 10:42:18.000000000 Z
+- name: sys
+  description: Go packages for low-level interaction with the operating system
+  package_url: https://pkg.go.dev/golang.org/x/sys
+  version: 0.0.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/MunBrian/Simple-Fiber-API/blob/master/go.sum
+  detection_source: go.mod
+  last_updated_by: Brian Mungai
+  last_updated_on: 2023-01-17 20:00:15.000000000 Z
+- name: tcplisten
+  description: Customizable TCP net.Listener for Go
+  package_url: https://pkg.go.dev/github.com/valyala/tcplisten
+  version: 1.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Go Modules Packages
+  image_url: https://img.stackshare.io/package/go-packages/image.png
+  detection_source_url: https://github.com/MunBrian/Simple-Fiber-API/blob/master/go.sum
+  detection_source: go.mod
+  last_updated_by: Brian Mungai
+  last_updated_on: 2023-01-17 20:00:15.000000000 Z
